@@ -9,16 +9,9 @@ const errorHandler = require('./src/middleware/error.handler')
 server.use(express.json())
 server.use('/products', routes)
 
+
 // error handling with middleware
 server.use(errorHandler)
-
-
-
-
-
-
-
-
 
 
 // server
